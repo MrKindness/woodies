@@ -3,25 +3,25 @@ body {
     margin: 0 auto;
 }
 
-header {
+#head {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-top: 15px;
     margin-bottom: 130px;
 }
 
-header figure {
+#head figure {
     display: grid;
     grid-template-columns: 30px 30px auto;
     margin: 0;
 }
 
-header figure img {
+#head figure img {
     width: 30px;
     height: 30px;
 }
 
-header figure figcaption {
+#head figure figcaption {
     color: #3e3f43;
     font-size: 24px;
     font-weight: normal;
@@ -29,25 +29,25 @@ header figure figcaption {
     margin-left: 10px;
 }
 
-header nav {
+#head nav {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     align-items: center;
 }
 
-header nav a {
+#head nav a {
     text-decoration: none;
     color: #222222;
     font-family: Nunito;
     font-size: 16px;
 }
 
-header nav a.active {
+#head nav a.active {
     color: #daa520;
     font-weight: bold;
 }
 
-header nav a.button {
+#head nav a.button {
     text-transform: uppercase;
     font-weight: bold;
     border: 1px solid #3e3f43;
@@ -90,16 +90,17 @@ section#main div a {
     text-decoration: none;
     display: block;
     background-color: #daa520;
-    vertical-align: middle;
+
     line-height: 50px;
 }
 
-section#about header {
+section#about #bigHeader {
     display: grid;
     height: 100px;
     grid-template-rows: 1fr;
-    grid-template-columns: auto 1fr 2fr;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
+    margin: 40px 0px;
 }
 
 section#about #imgContainer {
@@ -110,12 +111,12 @@ section#about #imgContainer {
     grid-row: 1/4;
 }
 
-section#about header img {
+section#about #bigHeader img {
     width: 30px;
     height: 30px;
 }
 
-section#about header #whoWeAre {
+section#about #bigHeader #whoWeAre {
     font-family: Nunito;
     font-weight: 700;
     font-size: 36px;
@@ -123,7 +124,7 @@ section#about header #whoWeAre {
     color: rgba(62, 63, 67, 1);
 }
 
-section#about header #aboutUs {
+section#about #bigHeader #aboutUs {
     font-family: Nunito;
     font-weight: 800;
     font-size: 72px;
@@ -132,8 +133,48 @@ section#about header #aboutUs {
     grid-column: 3/4;
 }
 
-section#about header #line {
+section#about #bigHeader #line {
     width: 100%;
     box-sizing: border-box;
     background-color: black;
+}
+
+section#about #firstArticle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: start;
+}
+
+section#about #firstArticle #imgContainer {
+    align-items: start;
+}
+
+section#about #firstArticle #imgContainer #bowlImg {
+    width: 388px;
+    z-index: 1;
+    align-self: end;
+}
+
+section#about #firstArticle #imgContainer #rectImg {
+    height: 400px;
+    z-index: 0;
+}
+
+section#about #firstArticle #text {
+    grid-column: 2/3;
+    align-self: center;
+}
+
+section#about #firstArticle header {
+    font-family: Nunito;
+    font-size: 36px;
+    color: rgba(62, 63, 67, 1);
+}
+
+section#about #firstArticle p {
+    font-family: Nunito;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1);
 }

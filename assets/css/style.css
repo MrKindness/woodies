@@ -90,17 +90,16 @@ section#main div a {
     text-decoration: none;
     display: block;
     background-color: #daa520;
-
     line-height: 50px;
 }
 
-section#about #bigHeader {
+section#about .bigHeader {
     display: grid;
     height: 100px;
     grid-template-rows: 1fr;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    margin: 40px 0px;
+    margin: 120px 0px 40px 0px;
 }
 
 section#about #imgContainer {
@@ -111,12 +110,12 @@ section#about #imgContainer {
     grid-row: 1/4;
 }
 
-section#about #bigHeader img {
+section#about .bigHeader img {
     width: 30px;
     height: 30px;
 }
 
-section#about #bigHeader #whoWeAre {
+section#about .bigHeader #whoWeAre {
     font-family: Nunito;
     font-weight: 700;
     font-size: 36px;
@@ -124,7 +123,7 @@ section#about #bigHeader #whoWeAre {
     color: rgba(62, 63, 67, 1);
 }
 
-section#about #bigHeader #aboutUs {
+section#about .bigHeader #aboutUs {
     font-family: Nunito;
     font-weight: 800;
     font-size: 72px;
@@ -133,7 +132,7 @@ section#about #bigHeader #aboutUs {
     grid-column: 3/4;
 }
 
-section#about #bigHeader #line {
+section#about .bigHeader #line {
     width: 100%;
     box-sizing: border-box;
     background-color: black;
@@ -177,4 +176,25 @@ section#about #firstArticle p {
     font-size: 24px;
     font-weight: 600;
     color: rgba(0, 0, 0, 1);
+}
+
+section#about #secondArticle {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+section#about #secondArticle #text header {
+    font-family: Nunito;
+    font-size: 36px;
+}
+
+section#about #secondArticle #text p {
+    font-family: Nunito;
+    font-size: 24px;
+}
+
+section#about #secondArticle img {
+    justify-self: end;
 }

@@ -93,7 +93,7 @@ section#main div a {
     line-height: 50px;
 }
 
-section#about .bigHeader {
+.bigHeader {
     display: grid;
     height: 100px;
     grid-template-rows: 1fr;
@@ -102,7 +102,7 @@ section#about .bigHeader {
     margin: 120px 0px 40px 0px;
 }
 
-section#about #imgContainer {
+.bigHeader > .bigHeaderImgContainer {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 30px auto;
@@ -110,12 +110,12 @@ section#about #imgContainer {
     grid-row: 1/4;
 }
 
-section#about .bigHeader img {
+.bigHeader > .bigHeaderImgContainer > .bigHeaderImg {
     width: 30px;
     height: 30px;
 }
 
-section#about .bigHeader #whoWeAre {
+.bigHeader > .bigHeaderImgContainer > .bigHeaderText1 {
     font-family: Nunito;
     font-weight: 700;
     font-size: 36px;
@@ -123,7 +123,13 @@ section#about .bigHeader #whoWeAre {
     color: rgba(62, 63, 67, 1);
 }
 
-section#about .bigHeader #aboutUs {
+.bigHeader > .line {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.bigHeader > .bigHeaderText2 {
     font-family: Nunito;
     font-weight: 800;
     font-size: 72px;
@@ -132,10 +138,12 @@ section#about .bigHeader #aboutUs {
     grid-column: 3/4;
 }
 
-section#about .bigHeader #line {
-    width: 100%;
+section#about #imgContainer {
+    display: grid;
     box-sizing: border-box;
-    background-color: black;
+    grid-template-columns: 30px auto;
+    align-items: center;
+    grid-row: 1/4;
 }
 
 section#about #firstArticle {
@@ -165,19 +173,6 @@ section#about #firstArticle #text {
     align-self: center;
 }
 
-section#about #firstArticle header {
-    font-family: Nunito;
-    font-size: 36px;
-    color: rgba(62, 63, 67, 1);
-}
-
-section#about #firstArticle p {
-    font-family: Nunito;
-    font-size: 24px;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 1);
-}
-
 section#about #secondArticle {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -185,14 +180,17 @@ section#about #secondArticle {
     align-items: center;
 }
 
-section#about #secondArticle #text header {
+section#about .headerText {
     font-family: Nunito;
     font-size: 36px;
+    color: rgba(62, 63, 67, 1);
 }
 
-section#about #secondArticle #text p {
+section#about .contentText {
     font-family: Nunito;
     font-size: 24px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1);
 }
 
 section#about #secondArticle img {

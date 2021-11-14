@@ -77,14 +77,14 @@ section#main div h1 {
     font-size: 72px;
 }
 
-section#main div a {
+.aButtonTemplate {
     font-family: Nunito;
     font-weight: bold;
     font-size: 16px;
     color: white;
     border: none;
     border-radius: 4px;
-    width: 175px;
+
     height: 50px;
     text-align: center;
     text-decoration: none;
@@ -93,13 +93,17 @@ section#main div a {
     line-height: 50px;
 }
 
+.expFur {
+    width: 175px;
+}
+
 .bigHeader {
     display: grid;
     height: 100px;
     grid-template-rows: 1fr;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    margin: 120px 0px 40px 0px;
+    margin: 120px 0px 80px 0px;
 }
 
 .bigHeader > .bigHeaderImgContainer {
@@ -195,4 +199,30 @@ section#about .contentText {
 
 section#about #secondArticle img {
     justify-self: end;
+}
+
+section#how #content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 80px;
+}
+section#how #content .imageCont {
+    margin: 0px auto;
+}
+
+section#how #content .imageCont img {
+    width: 238;
+}
+
+section#how #content .imageCont p {
+    font-family: Nunito;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0px;
+    text-align: center;
+}
+
+.getPersNow {
+    width: 212px;
+    margin: 0px auto;
 }

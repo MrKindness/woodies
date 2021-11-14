@@ -1,0 +1,139 @@
+body {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 15px;
+    margin-bottom: 130px;
+}
+
+header figure {
+    display: grid;
+    grid-template-columns: 30px 30px auto;
+    margin: 0;
+}
+
+header figure img {
+    width: 30px;
+    height: 30px;
+}
+
+header figure figcaption {
+    color: #3e3f43;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: Nunito;
+    margin-left: 10px;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #222222;
+    font-family: Nunito;
+    font-size: 16px;
+}
+
+header nav a.active {
+    color: #daa520;
+    font-weight: bold;
+}
+
+header nav a.button {
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #3e3f43;
+    border-radius: 8px;
+    width: 137px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+}
+
+section#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section#main div span {
+    color: #222222;
+    font-family: Nunito;
+    font-size: 36px;
+}
+
+section#main div h1 {
+    color: #313235;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 72px;
+}
+
+section#main div a {
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 175px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-color: #daa520;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+section#about header {
+    display: grid;
+    height: 100px;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto 1fr 2fr;
+    align-items: center;
+}
+
+section#about #imgContainer {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 30px auto;
+    align-items: center;
+    grid-row: 1/4;
+}
+
+section#about header img {
+    width: 30px;
+    height: 30px;
+}
+
+section#about header #whoWeAre {
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 0px 14px;
+    color: rgba(62, 63, 67, 1);
+}
+
+section#about header #aboutUs {
+    font-family: Nunito;
+    font-weight: 800;
+    font-size: 72px;
+    color: rgba(34, 34, 34, 0.1);
+    grid-row: 1/4;
+    grid-column: 3/4;
+}
+
+section#about header #line {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+}

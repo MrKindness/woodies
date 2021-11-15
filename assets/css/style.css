@@ -47,7 +47,7 @@ body {
     font-weight: bold;
 }
 
-#head nav a.button {
+.aButtonClear {
     text-transform: uppercase;
     font-weight: bold;
     border: 1px solid #3e3f43;
@@ -225,4 +225,58 @@ section#how #content .imageCont p {
 .getPersNow {
     width: 212px;
     margin: 0px auto;
+}
+
+section#categories #container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px 56px;
+}
+
+section#categories #container .instance {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-rows: 24px auto 1fr auto 24px;
+    grid-template-columns: 16px 1fr 16px;
+}
+
+section#categories #container .instance .buttonCategory {
+    display: inline;
+    width: 140px;
+    height: 40px;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0px;
+    color: #222222;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #3e3f43;
+    border-radius: 8px;
+    z-index: 5;
+    grid-row: 4/5;
+    grid-column: 2/3;
+    justify-self: center;
+    margin-left: 50px;
+}
+
+section#categories #container .instance .catImg {
+    grid-column: 1/3;
+    grid-row: 1/6;
+    z-index: 1;
+}
+
+section#categories #container .instance .catName {
+    font-family: Nunito;
+    font-size: 24px;
+    font-weight: 800;
+    z-index: 5;
+    justify-self: start;
+    margin: 0px;
+    margin-right: 16px;
+    grid-row: 2/3;
+    grid-column: 2/3;
 }
